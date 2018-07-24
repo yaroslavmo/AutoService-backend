@@ -1,20 +1,20 @@
-const Guest = require('../models/Client')
+const Client = require('../models/Client')
 
 class ClientController {
   find() {
-    return Guest.find()
+    return Client.find()
   }
   create(guest) {
-    return Guest.create(guest)
+    return Client.create(guest)
   }
   findById(id) {
-    return Guest.findById(id)
+    return Client.findById(id)
   }
   removeById(id) {
-    return Guest.findByIdAndRemove(id)
+    return Client.findByIdAndRemove(id)
   }
   updateById(id, guest) {
-    return Guest.findByIdAndUpdate(id, guest, { new: true })
+    return Client.findByIdAndUpdate(id, guest, { new: true })
   }
 }
 
