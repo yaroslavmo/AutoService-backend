@@ -1,6 +1,6 @@
-const Guest = require('../models/Guest')
+const Guest = require('../models/Client')
 
-class GuestController {
+class ClientController {
   find() {
     return Guest.find()
   }
@@ -18,4 +18,4 @@ class GuestController {
   }
 }
 
-module.exports = new GuestController()
+module.exports = new ClientController()

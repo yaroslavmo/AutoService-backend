@@ -1,7 +1,7 @@
 const meetups = require('./MeetupController')
-const guests = require('./GuestController')
+const clients = require('./ClientController')
 
 module.exports = {
   meetups,
-  guests
+  clients
 }

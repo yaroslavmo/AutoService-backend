@@ -5,6 +5,6 @@ const GuestSchema = new mongoose.Schema({
   createdAt: {type: Date, default: Date.now }
 })
 
-const Guest = mongoose.model('Guest', GuestSchema, 'guests')
+const Client = mongoose.model('Client', GuestSchema, 'guests')
 
-module.exports = Guest
+module.exports = Client
