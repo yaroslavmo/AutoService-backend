@@ -4,7 +4,7 @@ const router = require('./routes')
 const mongoose = require('mongoose')
 const cors = require('cors')
 
-const DB_URL = 'mongodb://localhost/autoservice-db'
+const DB_URL = 'mongodb://localhost/AutoService'
 mongoose.connect(DB_URL, function (err) {
   if (err) {
     console.error('Mongo connection FAIL: ' + err)
