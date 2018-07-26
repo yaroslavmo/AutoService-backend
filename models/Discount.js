@@ -7,3 +7,4 @@ const DiscountSchema = new mongoose.Schema({
 const Discount = mongoose.model('Discount', DiscountSchema, 'discounts')
 
 module.exports = Discount
+module.exports.discountSchema = DiscountSchema

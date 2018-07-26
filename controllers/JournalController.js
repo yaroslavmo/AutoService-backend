@@ -1,4 +1,4 @@
-const Journal = require('../models/Journal')
+const Journal = require('../models/Bill')
 
 class JournalController {
   find() {

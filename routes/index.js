@@ -1,11 +1,17 @@
 const express = require('express')
 const router = express.Router();
 
-const restfulRouter = require('./restful-router')
-const controllers = require('../controllers')
+const clients = require('./clients')
+const services = require('./services')
+const journal = require('./journal')
+const categories = require('./categories')
+const discounts = require('./discounts')
 
-for (let path in controllers) {
-  router.use(`/${path}`, restfulRouter(controllers[path]))
-}
+router
+    .use('/clients', clients)
+    .use('/services', services)
+    .use('/journal', journal)
+    .use('/categories', categories)
+    .use('/discounts', discounts)
 
 module.exports = router
