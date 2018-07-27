@@ -11,11 +11,12 @@ const countTotal = (billServices) => {
 };
 
 const BillSchema = new mongoose.Schema({
-    billClient: {type: {ClientSchema}}, //required: true},
-    billServices: {type:[serviceSchema]},//, required: true},    total: {type: Number, required: true},
+    billClient: {type: {ClientSchema} ,required: true},
+    billServices: {type:[serviceSchema] , required: true},
+    total: {type: Number, required: true},
     createdAt: {type:Date, default: Date.now()}
 });
 
-const Bill = mongoose.model('Bill', BillSchema, 'bills')
+const Bill = mongoose.model('Bill', BillSchema, 'bills');
 
 module.exports = Bill
