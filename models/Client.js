@@ -10,3 +10,4 @@ const ClientSchema = new mongoose.Schema({
 const Client = mongoose.model('Client', ClientSchema, 'clients')
 
 module.exports = Client
+module.exports.ClientSchema = ClientSchema
